@@ -1,0 +1,158 @@
+/*info box - left*/
+
+@media (max-width: 768px) {
+  .info-box {
+    width: 100%;
+    height: 90%;
+    position:inline;
+    align-items: center;
+    border-bottom: solid 1.5px rgb(164, 167, 171);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .info-spacer {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom:40%;
+  }
+  .icon-table{
+    display: inline-block;
+    vertical-align: center;
+    width:50%;
+  }
+  .info-text{
+    display : none;
+  }
+
+}
+@media (min-width: 768px) {
+  .info-box {
+    width: 25%;
+    height: 90%;
+    position:fixed;
+    align-items: center;
+    border-right: solid 1.5px rgb(164, 167, 171);
+  }
+  .icon-table{
+    display: inline-block;
+    width:100%;
+    vertical-align: center;
+  }
+  .info-spacer {
+    margin-top: 5%;
+  }
+  .info-text{
+    font-size: 12px;
+    color: grey;
+  }
+}
+
+
+.image-spacer {
+  margin-top: 20%;
+  margin-left :25%;
+  margin-right :25%;
+  margin-bottom: 5%;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.shadow{
+  height: 101%;
+  width: 101%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color:rgb(164, 167, 171);
+  opacity: 0.5;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.name {
+  position: relative;
+  font-size: 20px;
+  font-weight: normal;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.qualification {
+  position: relative;
+  color: grey;
+  font-size: 15px;
+}
+/*end of info box*/
+
+
+/*content section*/
+@media (max-width: 480px) {
+  .content-section {
+    margin-left: 28%;
+    width: 70%;
+    position: relative;
+    display: inline;
+    align-items: center;
+    overflow: auto;
+  }
+  .skill-table{
+    margin-left:5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    margin-left: 28%;
+    width: 70%;
+    height: 90vh;
+    position: relative;
+    display: block;
+    align-items: center;
+    overflow: auto;
+  }
+  .skill-table{
+    margin-left:10%;
+  }
+}
+
+.content-box{
+  text-align: left;
+  margin: 3%;
+  border-bottom: solid 1.5px rgb(164, 167, 171)
+}
+
+.content{
+  margin-left: 10%;
+  width: 80%;
+  text-align: left;
+}
+
+.box-header{
+  font-size: 20px;
+  vertical-align: middle
+}
+
+
+/*tech stack*/
+.tech-title{
+  font-size: 10px;
+}
+.skill-option{
+  vertical-align: top;
+}
