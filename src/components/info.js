@@ -22,33 +22,43 @@ function info() {
           <tbody>
             <tr className="name"><td>{context.fullname}</td></tr>
             <tr className="qualification"><td>{context.qualification}</td></tr>
-            <tr className="qualification"><td><IoLocationSharp width="30px"/>{context.location}</td></tr>
+            <tr><td>
+            <table className="locTable">
+            <tbody>
+              <tr className="qualification">
+                <td><IoLocationSharp width="30px"/>  {context.location1}</td>
+                <td>|</td>
+                <td><IoLocationSharp width="30px"/>  {context.location2}</td>
+              </tr>
+            </tbody>
+            </table>
+            </td></tr>
           </tbody>
         </table>
 
         <div className="info-spacer">
           <table className="icon-table">
-            <tbody className="icon-table">
+            <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><a href={context.linkedinURL}><FaLinkedinIn/></a></td>
+                <td width="100px"><a href={context.linkedinURL}><FaLinkedinIn className="info-icon"/></a></td>
                 <td><a href={context.linkedinURL}><span className="info-text">{context.linkedin}</span></a></td>
               </tr>
             </tbody>
-            <tbody className="icon-table">
+            <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><FaGlobeAmericas/></td>
+                <td width="100px"><FaGlobeAmericas className="info-icon"/></td>
                 <td><span className="info-text">{context.websiteURL}</span></td>
               </tr>
             </tbody>
-            <tbody className="icon-table">
+            <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><a href={context.instagramURL}><RiInstagramFill/></a></td>
+                <td width="100px"><a href={context.instagramURL}><RiInstagramFill className="info-icon"/></a></td>
                 <td><a href={context.instagramURL}><span className="info-text">{context.instagram}</span></a></td>
               </tr>
             </tbody>
-            <tbody className="icon-table">
+            <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><a href={context.emailAddress}><MdEmail/></a></td>
+                <td width="100px"><a href={context.emailAddress}><MdEmail className="info-icon"/></a></td>
                 <td><a href={context.emailAddress}><span className="info-text">{context.email}</span></a></td>
               </tr>
             </tbody>

@@ -1,16 +1,13 @@
 import './style.css';
 import React from 'react';
-import profilepic from '../images/nic.png'
-import {context} from '../text/context'
+import WorkExp from './workExp'
+import Profile from './profile'
 import { FaGraduationCap, FaMedal} from "react-icons/fa";
-import { IoPersonCircle, IoBriefcase, IoFingerPrint, IoLanguage} from "react-icons/io5";
+import { IoPersonCircle, IoBriefcase, IoFingerPrint,} from "react-icons/io5";
 import { AiTwotoneExperiment} from "react-icons/ai";
-import { HiOutlineCode} from "react-icons/hi";
-import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function content() {
   return (
-    <div className="Content">
       <div className="content-section">
 
         <div className="content-box">
@@ -22,66 +19,10 @@ function content() {
               </tr>
               </tbody>
           </table>
-          <div className="content">
-            <p dangerouslySetInnerHTML={{ __html: context.profile1}}/>
-            <p dangerouslySetInnerHTML={{ __html: context.profile2}}/>
-            <p dangerouslySetInnerHTML={{ __html: context.profile3}}/>
-          </div>
-          <table className="skill-table">
-              <tbody>
-               <tr>
-                 <td>
-                   <table width="100%">
-                       <tbody>
-                       <tr>
-                         <td width="50px"><HiOutlineCode size="20px"/></td>
-                         <td className="tech-title-column">TECH STACK</td>
-                       </tr>
-                       </tbody>
-                   </table>
-                 </td>
-                  <td>
-                    <table width="100%">
-                        <tbody>
-                        <tr>
-                          <td width="50px"><IoLanguage size="20px"/></td>
-                          <td className="tech-title-column">LANGUAGES</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    </td>
-                </tr>
-                <tr className="skill-option">
-                  <td>
-                  <table >
-                    {context.tech.map((tech, index)=>(
-                        <tbody key={index}>
-                        <tr>
-
-                          <td className="tech-title">{tech}</td>
-                          <td ><ProgressBar now={60}/></td>
-                        </tr>
-                        </tbody>
-                      ))}
-                  </table>
-                  </td>
-                  <td>
-                  <table >
-                    {context.language.map((lang, index)=>(
-                        <tbody key={index}>
-                        <tr>
-
-                          <td className="tech-title">{lang}</td>
-                          <td ><ProgressBar now={60}/></td>
-                        </tr>
-                        </tbody>
-                      ))}
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-          </table>
+          <Profile/>
         </div>
+
+
         <div className="content-box">
           <table className = "box-header">
             <tbody>
@@ -91,6 +32,7 @@ function content() {
             </tr>
             </tbody>
           </table>
+          <WorkExp/>
         </div>
 
         <div className="content-box">
@@ -135,7 +77,6 @@ function content() {
           </table>
         </div>
       </div>
-    </div>
   );
 }
 
