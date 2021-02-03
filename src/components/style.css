@@ -14,7 +14,7 @@
     flex-wrap: wrap;
   }
   .info-spacer {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 5%;
     margin-bottom:40%;
   }
@@ -31,7 +31,7 @@
 @media (min-width: 768px) {
   .info-box {
     width: 25%;
-    height: 90%;
+    height: 98%;
     position:fixed;
     align-items: center;
     border-right: solid 1.5px rgb(164, 167, 171);
@@ -102,7 +102,7 @@
 
 
 /*content section*/
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .content-section {
     margin-left: 28%;
     width: 70%;
@@ -111,9 +111,15 @@
     align-items: center;
     overflow: auto;
   }
-  .skill-table{
-    margin-left:5%;
+  .skill-table {
+    width:80%;
+    margin-left:10%;
+    margin-bottom:5%;
   }
+  .tech-title-column{
+    width: 200px;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -126,9 +132,15 @@
     align-items: center;
     overflow: auto;
   }
-  .skill-table{
-    margin-left:10%;
+  .skill-table {
+    width: 70%;
+    margin-left:15%;
+    margin-bottom:3%;
   }
+  .tech-title-column{
+    width: 300px;
+  }
+
 }
 
 .content-box{
@@ -136,13 +148,11 @@
   margin: 3%;
   border-bottom: solid 1.5px rgb(164, 167, 171)
 }
-
 .content{
   margin-left: 10%;
   width: 80%;
   text-align: left;
 }
-
 .box-header{
   font-size: 20px;
   vertical-align: middle

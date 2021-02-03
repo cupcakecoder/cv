@@ -23,9 +23,9 @@ function content() {
               </tbody>
           </table>
           <div className="content">
-            <p>{context.profile1}</p>
-            <p>{context.profile2}</p>
-            <p>{context.profile3}</p>
+            <p dangerouslySetInnerHTML={{ __html: context.profile1}}/>
+            <p dangerouslySetInnerHTML={{ __html: context.profile2}}/>
+            <p dangerouslySetInnerHTML={{ __html: context.profile3}}/>
           </div>
           <table className="skill-table">
               <tbody>
@@ -35,7 +35,7 @@ function content() {
                        <tbody>
                        <tr>
                          <td width="50px"><HiOutlineCode size="20px"/></td>
-                         <td width="200px">TECH STACK</td>
+                         <td className="tech-title-column">TECH STACK</td>
                        </tr>
                        </tbody>
                    </table>
@@ -45,7 +45,7 @@ function content() {
                         <tbody>
                         <tr>
                           <td width="50px"><IoLanguage size="20px"/></td>
-                          <td width="200px">LANGUAGES</td>
+                          <td className="tech-title-column">LANGUAGES</td>
                         </tr>
                         </tbody>
                     </table>
@@ -70,7 +70,7 @@ function content() {
                     {context.language.map((lang, index)=>(
                         <tbody key={index}>
                         <tr>
-                          
+
                           <td className="tech-title">{lang}</td>
                           <td ><ProgressBar now={60}/></td>
                         </tr>
