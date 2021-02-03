@@ -3,6 +3,7 @@
 export const context = {
     /*INFO*/
     fullname: "CHECK HOI, NICOLA WONG",
+    title:"THINKER - MAKER",
     qualification: "BSc Computer Science",
     location1:"North Point, HK",
     location2:"Ipswich, UK",

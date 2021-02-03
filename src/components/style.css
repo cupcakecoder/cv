@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-/*info box - left*/
 
+/*info box - left*/
 @media (max-width: 768px) {
   .info-box {
     width: 100%;
@@ -17,9 +17,9 @@
     flex-wrap: wrap;
   }
   .info-spacer {
-    margin-top: 10%;
+    margin-top: 30%;
     width:100%;
-    margin-bottom:50%;
+    margin-bottom:20%;
   }
   .icon-table{
     width:80%;
@@ -132,12 +132,27 @@
 }
 
 
+.title {
+  font-family: 'Expletus Sans', cursive;
+  letter-spacing: 2px;
+  position: relative;
+  color :rgb(90,90,90);
+  font-size: 90%;
+}
+
 .qualification {
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px;
   position: relative;
   color: grey;
-  font-size: 15px;
+  font-size: 80%;
+}
+.location {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  color: grey;
+  font-size: 80%
 }
 /*end of info box*/
 
@@ -244,39 +259,48 @@
   vertical-align: top;
 }
 .work-date-col{
-  width:20%;
+  width:25%;
   text-align: right;
+  font-size: 90%;
 }
 .work-dot-col{
-  width:16%;
+  width:10%;
   text-align: center;
+  vertical-align: top;
+}
+.work-dot{
+  opacity: 0.7;
+  height:10px;
 }
 .vertical-line{
+  margin-left:48%;
   height: 100%;
   width: 2px;
   display: block;
   position: inherit;
   overflow: hidden;
-  background-color:rgb(164, 167, 171);
-  margin-top: 1px;
+  opacity: 0.7;
+  background-color:rgb(90,90,90);
 }
 .work-deets-col{
-  padding-bottom: 5%;
   letter-spacing: 3px;
   width:75%;
   text-align: left;
+  height: 100%;
+  overflow: auto;
 }
 .work-title{
   font-family: 'Expletus Sans', cursive;
   font-weight: bold;
+  font-size: 90%;
 }
 .work-subtitle{
   font-family: 'Lato', sans-serif;
-  font-size: 80%;
+  font-size: 60%;
   padding-bottom: 5%;
 }
 .work-company{
   font-family: 'Expletus Sans', cursive;
   font-weight: bold;
-  font-size: 70%;
+  font-size: 65%;
 }

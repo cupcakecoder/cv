@@ -21,14 +21,17 @@ function info() {
         <table className="nameTable">
           <tbody>
             <tr className="name"><td>{context.fullname}</td></tr>
+            <tr className="title"><td>----- {context.title} -----</td></tr>
+            <tr className="qualification"><td>  </td></tr>
+            <tr className="qualification"><td>  </td></tr>
             <tr className="qualification"><td>{context.qualification}</td></tr>
             <tr><td>
             <table className="locTable">
             <tbody>
-              <tr className="qualification">
-                <td><IoLocationSharp width="30px"/>  {context.location1}</td>
+              <tr>
+                <td className="location"><IoLocationSharp width="30px"/>  {context.location1}</td>
                 <td>|</td>
-                <td><IoLocationSharp width="30px"/>  {context.location2}</td>
+                <td className="location"><IoLocationSharp width="30px"/>  {context.location2}</td>
               </tr>
             </tbody>
             </table>
