@@ -1,7 +1,7 @@
 import './style.css';
 import React from 'react';
 import { context } from '../text/context';
-import profilepic from '../images/nic.png'
+import profilepic from '../images/hair_me2020.png'
 
 import { IoLocationSharp} from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
