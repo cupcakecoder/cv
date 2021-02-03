@@ -4,6 +4,7 @@ export const context = {
     fullname: "CHECK HOI, NICOLA WONG",
     qualification: "BSc Computer Science",
     location:"Ipswich, UK",
+    websiteURL: "www.google.com",
     email: "hotmail.com",
     emailAddress:"wongchekhoi@hotmail.com",
     linkedin:"/nicola-wong1",

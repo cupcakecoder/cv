@@ -3,6 +3,7 @@ import Info from './components/info'
 import Content from './components/content'
 import React, { Component } from 'react';
 
+
 class App extends Component{
 
   componentDidMount() {

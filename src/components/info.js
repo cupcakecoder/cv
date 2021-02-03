@@ -5,7 +5,7 @@ import profilepic from '../images/hair_me2020.png'
 
 import { IoLocationSharp} from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaGlobeAmericas } from "react-icons/fa";
 import { RiInstagramFill} from "react-icons/ri";
 
 function info() {
@@ -17,12 +17,12 @@ function info() {
           <span className="shadow"/>
           <img src={profilepic} alt={context.fullname} className="profile-pic"/>
         </div>
-        <br/>
 
-        <table width="100%">
+        <table className="nameTable">
           <tbody>
             <tr className="name"><td>{context.fullname}</td></tr>
             <tr className="qualification"><td>{context.qualification}</td></tr>
+            <tr className="qualification"><td><IoLocationSharp width="30px"/>{context.location}</td></tr>
           </tbody>
         </table>
 
@@ -30,14 +30,14 @@ function info() {
           <table className="icon-table">
             <tbody className="icon-table">
               <tr>
-                <td width="100px"><IoLocationSharp/></td>
-                <td><span className="info-text">{context.location}</span></td>
+                <td width="100px"><a href={context.linkedinURL}><FaLinkedinIn/></a></td>
+                <td><a href={context.linkedinURL}><span className="info-text">{context.linkedin}</span></a></td>
               </tr>
             </tbody>
             <tbody className="icon-table">
               <tr>
-                <td width="100px"><a href={context.linkedinURL}><FaLinkedinIn/></a></td>
-                <td><a href={context.linkedinURL}><span className="info-text">{context.linkedin}</span></a></td>
+                <td width="100px"><FaGlobeAmericas/></td>
+                <td><span className="info-text">{context.websiteURL}</span></td>
               </tr>
             </tbody>
             <tbody className="icon-table">
