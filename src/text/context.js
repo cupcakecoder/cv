@@ -2,7 +2,7 @@
 
 export const context = {
     /*INFO*/
-    fullname: "CHECK HOI, NICOLA WONG",
+    fullname: "CHEK HOI, NICOLA WONG",
     title:"THINKER - MAKER",
     qualification: "BSc Computer Science",
     location1:"North Point, HK",
@@ -23,9 +23,12 @@ export const context = {
     language:["ENGLISH", "CANTONESE", "MADNARIN"],
 
     /*WORK EXPERIENCE*/
-    work:[{from:"future", to:"future", title:"An Innovator", subtitle:"", company:"Your Company", location:"eligible in UK / HK"},
+    work:[{from:"NOW", to:"NOW", title:"An Innovator", subtitle:"", company:"Your Company", location:"eligible in UK / HK"},
     {from:"2018", to:"2020", title:"Research Specialist",subtitle:"AI Modelling & Resource Optimisation", company:"British Telecoms Plc - Applied Research", location:"Adastral Park, Martlesham, UK"},
     {from:"2016", to:"2018", title:"Trainee Java Developer",subtitle:"Full-stack", company:"Bertrams Books / Connect Books", location:"Norwich, UK"},
-    {from:"2014", to:"2016", title:"Part-time bakery staff",subtitle:"Shopkeeper", company:"Student Union University of East Anglia", location:"Norwich, UK"}]
+    {from:"2014", to:"2016", title:"Part-time bakery staff",subtitle:"Shopkeeper", company:"Student Union University of East Anglia", location:"Norwich, UK"}],
 
+    /*EDUCATION*/
+    school:[{from:"2013", to:"2016", title:"Bsc Computer Science", grade:"First", school:"University of East Anglia", location:"Norwich, UK"},
+    {from:"2007", to:"2013", title:"Hong Kong Diploma of Secondary Education (HKDSE)", grade:"5** 5 4 : UCAS Tariff 330", school:"Sacred Heart Canossian College", location:"Pok Fu Lam, HK"}]
 };

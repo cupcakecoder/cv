@@ -1,7 +1,8 @@
 import './style.css';
 import React from 'react';
-import WorkExp from './workExp'
-import Profile from './profile'
+import WorkExp from './workExp';
+import Profile from './profile';
+import Education from './education';
 import { FaGraduationCap, FaMedal} from "react-icons/fa";
 import { IoPersonCircle, IoBriefcase, IoFingerPrint,} from "react-icons/io5";
 import { AiTwotoneExperiment} from "react-icons/ai";
@@ -41,6 +42,7 @@ function content() {
             </tr>
             </tbody>
           </table>
+          <Education/>
         </div>
 
         <div className="content-box">
