@@ -37,14 +37,12 @@ function content() {
           <table className = "box-header">
             <tbody>
             <tr>
-              <td width="50px"><FaGraduationCap size="30px"/></td>
-              <td>EDUCATION</td>
+              <td width="50px"><AiTwotoneExperiment size="30px"/></td>
+              <td>PROJECTS</td>
             </tr>
             </tbody>
           </table>
-          <Education/>
         </div>
-
         <div className="content-box">
           <table className = "box-header">
             <tbody>
@@ -59,12 +57,14 @@ function content() {
           <table className = "box-header">
             <tbody>
             <tr>
-              <td width="50px"><AiTwotoneExperiment size="30px"/></td>
-              <td>PROJECTS</td>
+              <td width="50px"><FaGraduationCap size="30px"/></td>
+              <td>EDUCATION</td>
             </tr>
             </tbody>
           </table>
+          <Education/>
         </div>
+
         <div className="content-box">
           <table className = "box-header">
               <tbody>

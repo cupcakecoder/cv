@@ -168,18 +168,7 @@
     align-items: center;
     overflow: auto;
   }
-  .skill-table {
-    width:90%;
-    margin-left:5%;
-    margin-bottom:5%;
-  }
-  .tech-title-column{
-    width: 200px;
-    color :rgb(90,90,90);
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 3px;
-    vertical-align: middle;
-  }
+
   .content{
     color :rgb(90,90,90);
     font-family: 'Lato', sans-serif;
@@ -202,18 +191,7 @@
     align-items: center;
     overflow: auto;
   }
-  .skill-table {
-    width: 80%;
-    margin-left:10%;
-    margin-bottom:3%;
-    vertical-align: middle;
-  }
-  .tech-title-column{
-    width: 300px;
-    color :rgb(90,90,90);
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 3px;
-  }
+
   .content{
     color :rgb(90,90,90);
     font-family: 'Lato', sans-serif;
@@ -225,6 +203,15 @@
 
 }
 
+ul{
+  list-style-type : none;
+  padding-inline-start : 0em !important;
+}
+li{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
 .content-box{
   text-align: left;
   margin: 3%;
@@ -240,16 +227,51 @@
   vertical-align: middle
 }
 
+/*end of content section*/
 
 /*tech stack & language */
+@media (max-width: 768px) {
+  .skill-table {
+    width:90%;
+    margin-left:5%;
+    margin-bottom:5%;
+  }
+  .tech-title-column{
+    width: 200px;
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 768px) {
+  .skill-table {
+    width: 80%;
+    margin-left:10%;
+    margin-bottom:3%;
+    vertical-align: middle;
+  }
+  .tech-title-column{
+    width: 250px;
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+}
 .tech-title{
   font-family: 'Source Code Pro', monospace;
   font-size: 12px;
   text-align: right;
+  padding-right: 5%;
+  text-transform: uppercase;
 }
 .lang-title{
   font-size: 12px;
-  text-align: right;
+  text-align: right !important;
+  padding-right: 5%;
+  text-transform: uppercase;
 }
 .skill-option{
   vertical-align: top;
@@ -259,8 +281,13 @@
   color :rgb(90,90,90);
   font-size:20px;
 }
+.progressbar{
+  padding-right:10%;
+}
+/*end of tech stack & language */
 
-/* work experience*/
+/* work experience & education*/
+
 .work-exp-table{
   width:100%;
   margin-top: 5%;
@@ -272,7 +299,7 @@
 .work-date-col{
   width:25%;
   text-align: right;
-  font-size: 70%;
+  font-size: 85%;
   vertical-align: top;
 }
 .work-dot-col{
@@ -305,6 +332,10 @@
 @media (max-width: 768px) {
   .work-date-col{
     padding-top: 2%;
+    width:10% !important;
+  }
+  .work-deets-col{
+    width:80% !important;
   }
   .work-title{
     text-transform: uppercase;
@@ -314,16 +345,19 @@
   }
   .work-subtitle{
     font-family: 'Lato', sans-serif;
+    letter-spacing: 0.8px;
     font-size: 50%;
     padding-bottom: 5%;
   }
   .work-company{
     font-family: 'Expletus Sans', cursive;
+    letter-spacing: 0.8px;
     font-weight: 550;
     font-size: 60%;
   }
   .school-grade{
     font-family: 'Lato', sans-serif;
+    letter-spacing: 0.8px;
     font-size: 60%;
     padding-bottom: 5%;
   }
@@ -338,13 +372,13 @@
   }
   .work-subtitle{
     font-family: 'Lato', sans-serif;
-    font-size: 60%;
+    font-size: 80%;
     padding-bottom: 5%;
   }
   .work-company{
     font-family: 'Expletus Sans', cursive;
     font-weight: bold;
-    font-size: 65%;
+    font-size: 76%;
   }
   .school-grade{
     font-family: 'Lato', sans-serif;
@@ -352,3 +386,5 @@
     padding-bottom: 5%;
   }
 }
+
+/*end of work experience & education*/

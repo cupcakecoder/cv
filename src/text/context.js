@@ -19,11 +19,13 @@ export const context = {
     profile1: "I am a <b>highly motivated</b> individual who is always looking out for a <b>challenge</b>.",
     profile2:"I am also a <b>communicative trilingual</b>, a passionate <b>team player</b> and a <b>confident leader</b>.",
     profile3:"I am experienced in <b>software development</b> and am now <b>exploring</b> the power of <b>data science</b>.",
-    tech:["JAVA","PYTHON","SQL","SPRING BOOT","REACTJS", "REST API","DOCKER", "GIT","CI/CD"],
-    language:["ENGLISH", "CANTONESE", "MADNARIN"],
+    tech:[{tech:"JAVA",percentage:"90%"},{tech:"PYTHON",percentage :"60%"},{tech:"SQL",percentage:"75%"},
+    {tech:"SPRING BOOT",percentage:"80%"},{tech:"REACTJS",percentage:"60%"},{tech:"REST API",percentage:"75%"},
+    {tech:"DOCKER",percentage:"60%"}, {tech:"GIT",percentage:"80%"},{tech:"CI/CD",percentage:"60%"}],
+    language:[{lang:"English",percentage:"100%"}, {lang:"CANTONESE",percentage:"100%"}, {lang:"MADNARIN",percentage:"80%"}],
 
     /*WORK EXPERIENCE*/
-    work:[{from:"NOW", to:"NOW", title:"An Innovator", subtitle:"", company:"Your Company", location:"eligible in UK / HK"},
+    work:[{from:"NOW", to:"NOW", title:"An Innovator", subtitle:"Elevate your business", company:"Your Company", location:"eligible in UK / HK"},
     {from:"2018", to:"2020", title:"Research Specialist",subtitle:"AI Modelling & Resource Optimisation", company:"British Telecoms Plc - Applied Research", location:"Adastral Park, Martlesham, UK"},
     {from:"2016", to:"2018", title:"Trainee Java Developer",subtitle:"Full-stack", company:"Bertrams Books / Connect Books", location:"Norwich, UK"},
     {from:"2014", to:"2016", title:"Part-time bakery staff",subtitle:"Shopkeeper", company:"Student Union University of East Anglia", location:"Norwich, UK"}],

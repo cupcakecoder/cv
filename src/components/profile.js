@@ -3,7 +3,7 @@ import React from 'react';
 import { context } from '../text/context';
 import { IoLanguage} from "react-icons/io5";
 import { HiOutlineCode} from "react-icons/hi";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+import ProgressBar from './progressbar';
 
 function profile() {
   return (
@@ -13,59 +13,44 @@ function profile() {
         <p dangerouslySetInnerHTML={{ __html: context.profile2}}/>
         <p dangerouslySetInnerHTML={{ __html: context.profile3}}/>
       </div>
-      <table className="skill-table">
-          <tbody>
-           <tr>
-             <td>
-               <table width="100%">
-                   <tbody>
-                   <tr>
-                     <td width="50px"><HiOutlineCode className="skill-icon"/></td>
-                     <td className="tech-title-column">TECH STACK</td>
-                   </tr>
-                   </tbody>
-               </table>
-             </td>
-              <td>
-                <table width="100%">
-                    <tbody>
-                    <tr>
-                      <td width="50px"><IoLanguage className="skill-icon"/></td>
-                      <td className="tech-title-column">LANGUAGES</td>
-                    </tr>
-                    </tbody>
-                </table>
-                </td>
-            </tr>
-            <tr className="skill-option">
-              <td>
-              <table >
-                {context.tech.map((tech, index)=>(
-                    <tbody key={index}>
-                    <tr>
+      <div className="content">
+      <ul>
 
-                      <td className="tech-title">{tech}</td>
-                      <td ><ProgressBar now={60}/></td>
-                    </tr>
-                    </tbody>
+        <li>
+          <table width="100%">
+              <tbody>
+              <tr>
+                <td width="50px"><IoLanguage className="skill-icon"/></td>
+                <td className="tech-title-column"> LANGUAGES</td>
+              </tr>
+
+              {context.language.map((lang, index)=>(
+                <tr key={index}>
+                  <td width="30%" className="lang-title">{lang.lang}</td>
+                  <td width="70%" className="progressbar"><ProgressBar percentage={lang.percentage} className="progressbar"/></td>
+                </tr>
+              ))}
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <table width="100%">
+                <tbody>
+                <tr>
+                  <td width="50px"><HiOutlineCode className="skill-icon"/></td>
+                  <td className="tech-title-column">TECH STACK</td>
+                </tr>
+                {context.tech.map((tech, index)=>(
+                <tr key={index}>
+                  <td width="30%" className="tech-title">{tech.tech}</td>
+                  <td width="70%" className="progressbar"><ProgressBar percentage={tech.percentage} /></td>
+                </tr>
                   ))}
+                </tbody>
               </table>
-              </td>
-              <td>
-              <table >
-                {context.language.map((lang, index)=>(
-                    <tbody key={index}>
-                    <tr>
-                      <td className="lang-title">{lang}</td>
-                      <td ><ProgressBar striped variant="success" now={60} active ="true"/></td>
-                    </tr>
-                    </tbody>
-                  ))}
-              </table>
-              </td>
-            </tr>
-          </tbody>
-      </table>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
