@@ -12,8 +12,8 @@ function workExp() {
           {context.work.map((job,index)=>(
             <tr className="work-row" key={index}>
               <td className="work-date-col">{job.to}</td>
-              <td>
-                <table height="100vh"className="work-dot-col">
+              <td height="100vh">
+                <table className="work-dot-col">
                   <tbody>
                     <tr><td className="work-dot"> <GoPrimitiveDot/></td></tr>
                     <tr><td><div className="vertical-line"/></td></tr>

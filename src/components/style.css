@@ -273,9 +273,11 @@
   width:25%;
   text-align: right;
   font-size: 70%;
+  vertical-align: top;
 }
 .work-dot-col{
   width:10%;
+  height:100%;
   text-align: center;
   vertical-align: top;
 }
@@ -284,7 +286,7 @@
   height:10px;
 }
 .vertical-line{
-  margin-left:48%;
+  margin-left:46%;
   height: 100%;
   width: 2px;
   display: block;
@@ -301,6 +303,9 @@
   overflow: auto;
 }
 @media (max-width: 768px) {
+  .work-date-col{
+    padding-top: 2%;
+  }
   .work-title{
     font-family: 'Expletus Sans', cursive;
     font-weight: 600;
