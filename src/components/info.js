@@ -62,7 +62,7 @@ function info() {
             <tbody className="icon-celltable">
               <tr>
                 <td width="100px"><a href={context.emailAddress}><MdEmail className="info-icon"/></a></td>
-                <td><a href={context.emailAddress}><span className="info-text">{context.email}</span></a></td>
+                <td><a href={'mailto:'+(context.emailAddress)}><span className="info-text">{context.email}</span></a></td>
               </tr>
             </tbody>
           </table>
