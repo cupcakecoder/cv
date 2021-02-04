@@ -76,6 +76,7 @@ function content() {
           </table>
         </div>
       </div>
+
   );
 }
 

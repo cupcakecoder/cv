@@ -7,13 +7,13 @@ export const context = {
     qualification: "BSc Computer Science",
     location1:"North Point, HK",
     location2:"Ipswich, UK",
-    websiteURL: "www.google.com",
+    websiteURL: "https://www.google.com",
     email: "hotmail.com",
     emailAddress:"wongchekhoi@hotmail.com",
-    linkedin:"/nicola-wong1",
-    linkedinURL:encodeURIComponent("https://www.linkedin.com/in/nicola-wong1/"),
+    linkedin:"nicola-wong1",
+    linkedinURL:"https://www.linkedin.com/in/nicola-wong1/",
     instagram:"nicnic_cola",
-    instagramURL:encodeURIComponent("https://instagram.com/nicnic_cola"),
+    instagramURL:"https://instagram.com/nicnic_cola",
 
     /*PROFILE*/
     profile1: "I am a <b>highly motivated</b> individual who is always looking out for a <b>challenge</b>.",

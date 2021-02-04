@@ -51,8 +51,19 @@
   }
 }
 @media (max-width = 768px) {
-  .body, .html {
+  .body, .html{
     overflow: auto;
     margin-top: 2.5%;
   }
 }
+
+
+  .footer{
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    letter-spacing: 2px;
+    font-size: 70%;
+    color: grey;
+    text-align: right;
+  }

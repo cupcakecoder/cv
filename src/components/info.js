@@ -43,20 +43,20 @@ function info() {
           <table className="icon-table">
             <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><a href={context.linkedinURL}><FaLinkedinIn className="info-icon"/></a></td>
-                <td><a href={context.linkedinURL}><span className="info-text">{context.linkedin}</span></a></td>
+                <td width="100px"><a href={context.linkedinURL} target="_blank"><FaLinkedinIn className="info-icon"/></a></td>
+                <td><a href={context.linkedinURL} target="_blank" ><span className="info-text">/{context.linkedin}</span></a></td>
               </tr>
             </tbody>
             <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><FaGlobeAmericas className="info-icon"/></td>
-                <td><span className="info-text">{context.websiteURL}</span></td>
+                <td width="100px"><a href={context.websiteURL} target="_blank" ><FaGlobeAmericas className="info-icon"/></a></td>
+                <td><a href={context.websiteURL} target="_blank" ><span className="info-text">{context.websiteURL}</span></a></td>
               </tr>
             </tbody>
             <tbody className="icon-celltable">
               <tr>
-                <td width="100px"><a href={context.instagramURL}><RiInstagramFill className="info-icon"/></a></td>
-                <td><a href={context.instagramURL}><span className="info-text">{context.instagram}</span></a></td>
+                <td width="100px"><a href={context.instagramURL} target="_blank"><RiInstagramFill className="info-icon"/></a></td>
+                <td><a href={context.instagramURL} target="_blank" ><span className="info-text">@{context.instagram}</span></a></td>
               </tr>
             </tbody>
             <tbody className="icon-celltable">
