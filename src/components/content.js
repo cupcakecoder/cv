@@ -21,8 +21,6 @@ function content() {
           </table>
           <Profile/>
         </div>
-
-
         <div className="content-box">
           <table className = "box-header">
             <tbody>
@@ -34,7 +32,6 @@ function content() {
           </table>
           <WorkExp/>
         </div>
-
         <div className="content-box">
           <table className = "box-header">
             <tbody>

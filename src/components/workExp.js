@@ -11,13 +11,12 @@ function workExp() {
         <tbody>
           {context.work.map((job,index)=>(
             <tr className="work-row" key={index}>
-              {job.to.length>1 && <td className="work-date-col">{job.from} - {job.to} </td>}
-              {job.to.length<1 && <td className="work-date-col">{job.from}</td> }
+              <td className="work-date-col">{job.to}</td>
               <td>
                 <table height="100vh"className="work-dot-col">
                   <tbody>
                     <tr><td className="work-dot"> <GoPrimitiveDot/></td></tr>
-                    <tr> <div className="vertical-line"/> </tr>
+                    <tr><td><div className="vertical-line"/></td></tr>
                   </tbody>
                 </table>
               </td>
@@ -33,14 +32,14 @@ function workExp() {
               </td>
             </tr>
           ))}
-          <tr className="work-row"><td className="work-dot-col"></td>
+          <tr className="work-row"><td className="work-date-col">{context.work[context.work.length-1].from}</td>
           <td>
             <table className="work-dot-col">
               <tbody>
                 <tr><td className="work-dot"> <GoPrimitiveDot/></td></tr>
               </tbody>
             </table>
-          </td> <td></td></tr>
+          </td><td></td></tr>
         </tbody>
       </table>
     </div>

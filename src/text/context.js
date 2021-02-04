@@ -23,9 +23,9 @@ export const context = {
     language:["ENGLISH", "CANTONESE", "MADNARIN"],
 
     /*WORK EXPERIENCE*/
-    work:[{from:"future", to:"", title:"An Innovator", subtitle:"", company:"Your Company", location:"eligible in UK / HK"},
-    {from:"2018", to:"20", title:"Research Specialist",subtitle:"AI Modelling & Resource Optimisation", company:"British Telecoms Plc - Applied Research", location:"Adastral Park, Martlesham, UK"},
-    {from:"2018", to:"20", title:"Trainee Java Developer",subtitle:"Full-stack", company:"Bertrams Books / Connect Books", location:"Norwich, UK"},
-    {from:"2014", to:"16", title:"Part-time bakery staff",subtitle:"Shopkeeper", company:"Student Union University of East Anglia", location:"Norwich, UK"}]
+    work:[{from:"future", to:"future", title:"An Innovator", subtitle:"", company:"Your Company", location:"eligible in UK / HK"},
+    {from:"2018", to:"2020", title:"Research Specialist",subtitle:"AI Modelling & Resource Optimisation", company:"British Telecoms Plc - Applied Research", location:"Adastral Park, Martlesham, UK"},
+    {from:"2016", to:"2018", title:"Trainee Java Developer",subtitle:"Full-stack", company:"Bertrams Books / Connect Books", location:"Norwich, UK"},
+    {from:"2014", to:"2016", title:"Part-time bakery staff",subtitle:"Shopkeeper", company:"Student Union University of East Anglia", location:"Norwich, UK"}]
 
 };
