@@ -26,22 +26,22 @@ function content() {
           <table className = "box-header">
             <tbody>
             <tr>
+              <td width="50px"><AiTwotoneExperiment size="30px"/></td>
+              <td>PROJECTS</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="content-box">
+          <table className = "box-header">
+            <tbody>
+            <tr>
               <td width="50px"><IoBriefcase size="30px"/></td>
               <td>WORK EXPERIENCE</td>
             </tr>
             </tbody>
           </table>
           <WorkExp/>
-        </div>
-        <div className="content-box">
-          <table className = "box-header">
-            <tbody>
-            <tr>
-              <td width="50px"><AiTwotoneExperiment size="30px"/></td>
-              <td>PROJECTS</td>
-            </tr>
-            </tbody>
-          </table>
         </div>
         <div className="content-box">
           <table className = "box-header">
