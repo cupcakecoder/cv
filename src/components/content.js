@@ -3,6 +3,7 @@ import React from 'react';
 import WorkExp from './workExp';
 import Profile from './profile';
 import Education from './education';
+import Projects from './projects';
 import { FaGraduationCap, FaMedal} from "react-icons/fa";
 import { IoPersonCircle, IoBriefcase, IoFingerPrint,} from "react-icons/io5";
 import { AiTwotoneExperiment} from "react-icons/ai";
@@ -10,7 +11,6 @@ import { AiTwotoneExperiment} from "react-icons/ai";
 function content() {
   return (
       <div className="content-section">
-
         <div className="content-box">
           <table className = "box-header">
               <tbody>
@@ -31,6 +31,9 @@ function content() {
             </tr>
             </tbody>
           </table>
+          <div className="content">
+            <Projects/>
+          </div>
         </div>
         <div className="content-box">
           <table className = "box-header">
