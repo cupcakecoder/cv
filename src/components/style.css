@@ -175,7 +175,7 @@
     letter-spacing: 1px;
     margin-left: 5%;
     margin-top: 5%;
-    margin-bottom :5%;
+    margin-bottom :8%;
     width: 90%;
     text-align: left;
   }
@@ -394,3 +394,8 @@ li{
 }
 
 /*end of work experience & education*/
+
+/*projects*/
+.skill-tags-space{
+  line-height: 2em;
+}

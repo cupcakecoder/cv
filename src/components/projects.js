@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Icon, Image, Label} from 'semantic-ui-react'
 import './style.css';
-import src from'../images/hair_me2020-192.png'
+// import src from'../images/hair_me2020-192.png'
 import {projs} from '../text/projects'
 import useWindowDimensions from './windowDimensions'
 
@@ -11,7 +11,7 @@ const Projects = () => {
    if (width < 768) {
       itemsPerRow = 1;
     }else{
-      itemsPerRow = 3;
+      itemsPerRow = 2;
     }
 
   console.log(itemsPerRow);
@@ -20,35 +20,33 @@ const Projects = () => {
   colourMap.set('ART',{colour: 'green'})
   colourMap.set('DATA',{colour:'brown'})
   return (
-     <React.Fragment>
+     <div className="content">
        <Card.Group itemsPerRow={itemsPerRow}>
          {projs.p.map((proj, idx)=>{
            var colour = colourMap.get(proj.type).colour;
            return(
            <Card color={colour} key={idx}>
-             <Image src={src} wrapped ui={false} />
              <Card.Content>
                <Card.Header>{proj.title}</Card.Header>
                <Card.Meta>
-                 <span className='date'>{proj.date}</span>
+                 <span className='date'>{proj.date} | {proj.collaboration}</span>
                </Card.Meta>
                <Card.Description>
-                 {proj.description}
+                 <span dangerouslySetInnerHTML={{ __html: proj.description}}/>
                </Card.Description>
              </Card.Content>
-             <Card.Content extra>
+             <Card.Content extra className="skill-tags-space" >
                  {proj.skills.map((tag, i)=>{
                    return(
-                   <Label key={i}>
-                     <Icon name='tags'/>
-                       {tag}
-                   </Label>);
+                       <Label key={i}>
+                            <Icon name="check"/> {tag}
+                       </Label> );
                  })}
              </Card.Content>
            </Card>);
          })}
        </Card.Group>
-     </React.Fragment>
+     </div>
    );
   };
 export default Projects;

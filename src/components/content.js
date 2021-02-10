@@ -31,9 +31,8 @@ function content() {
             </tr>
             </tbody>
           </table>
-          <div className="content">
+
             <Projects/>
-          </div>
         </div>
         <div className="content-box">
           <table className = "box-header">
