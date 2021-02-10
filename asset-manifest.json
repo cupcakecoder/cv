@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8701bf37.chunk.css",
+    "main.css": "/static/css/main.6dac9c6d.chunk.css",
     "main.js": "/static/js/main.5dc89aac.chunk.js",
     "main.js.map": "/static/js/main.5dc89aac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b0ae91fd.js",
@@ -12,7 +12,7 @@
     "static/js/3.1f559b17.chunk.js.map": "/static/js/3.1f559b17.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.85f7760d.chunk.css.map": "/static/css/2.85f7760d.chunk.css.map",
-    "static/css/main.8701bf37.chunk.css.map": "/static/css/main.8701bf37.chunk.css.map",
+    "static/css/main.6dac9c6d.chunk.css.map": "/static/css/main.6dac9c6d.chunk.css.map",
     "static/js/2.9e66cf38.chunk.js.LICENSE.txt": "/static/js/2.9e66cf38.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff",
     "static/media/hair_me2020.220d0915.png": "/static/media/hair_me2020.220d0915.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.b0ae91fd.js",
     "static/css/2.85f7760d.chunk.css",
     "static/js/2.9e66cf38.chunk.js",
-    "static/css/main.8701bf37.chunk.css",
+    "static/css/main.6dac9c6d.chunk.css",
     "static/js/main.5dc89aac.chunk.js"
   ]
 }
