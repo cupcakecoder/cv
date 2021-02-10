@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card, Icon, Image, Label} from 'semantic-ui-react'
+import { Card, Icon, Label} from 'semantic-ui-react'
 import './style.css';
 // import src from'../images/hair_me2020-192.png'
-import {projs} from '../text/projects'
+import {achievements} from '../text/achievements'
 import useWindowDimensions from './windowDimensions'
 
-const Projects = () => {
+const Achievements = () => {
   let itemsPerRow
    const { height, width } = useWindowDimensions();
    if (width < 768) {
@@ -16,27 +16,27 @@ const Projects = () => {
 
   console.log(itemsPerRow);
   let colourMap = new Map();
-  colourMap.set('SOFTWARE',{colour:'red'})
-  colourMap.set('ART',{colour: 'green'})
-  colourMap.set('DATA',{colour:'brown'})
+  colourMap.set('Work',{colour:'brown'})
+  colourMap.set('x',{colour: 'green'})
+  colourMap.set('y',{colour:'brown'})
   return (
      <div className="content">
        <Card.Group itemsPerRow={itemsPerRow}>
-         {projs.p.map((proj, idx)=>{
-           var colour = colourMap.get(proj.type).colour;
+         {achievements.p.map((achieve, idx)=>{
+           var colour = colourMap.get(achieve.type).colour;
            return(
            <Card color={colour} key={idx}>
              <Card.Content>
-               <Card.Header className="work-title">{proj.title}</Card.Header>
+               <Card.Header className="work-title">{achieve.title}</Card.Header>
                <Card.Meta>
-                 <span className='date'>{proj.date} | {proj.collaboration}</span>
+                 <span className='date'>{achieve.date} | {achieve.collaboration}</span>
                </Card.Meta>
                <Card.Description>
-                 <span dangerouslySetInnerHTML={{ __html: proj.description}}/>
+                 <span dangerouslySetInnerHTML={{ __html: achieve.description}}/>
                </Card.Description>
              </Card.Content>
              <Card.Content extra className="skill-tags-space" >
-                 {proj.skills.map((tag, i)=>{
+                 {achieve.skills.map((tag, i)=>{
                    return(
                        <Label key={i}>
                             <Icon name="check"/> {tag}
@@ -49,4 +49,4 @@ const Projects = () => {
      </div>
    );
   };
-export default Projects;
+export default Achievements;
