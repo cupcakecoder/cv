@@ -348,12 +348,13 @@ li{
     font-family: 'Expletus Sans', cursive;
     color :rgb(90,90,90) !important;
     font-weight: 600;
-    font-size: 80%;
+    font-size: 80% !important;
   }
+  .proj-title{}
   .work-subtitle{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.8px;
-    font-size: 50%;
+    font-size: 60%;
     padding-bottom: 5%;
   }
   .work-company{
@@ -378,9 +379,12 @@ li{
     font-weight: bold;
     font-size: 90%;
   }
+  .proj-title{
+    font-size: 100% !important;
+  }
   .work-subtitle{
     font-family: 'Lato', sans-serif;
-    font-size: 80%;
+    font-size: 85%;
     padding-bottom: 5%;
   }
   .work-company{
@@ -400,4 +404,10 @@ li{
 /*projects*/
 .skill-tags-space{
   line-height: 2em;
+}
+.desc{
+  font-size: 80%;
+}
+.tags{
+  font-size: 75% !important;
 }

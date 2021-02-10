@@ -27,18 +27,18 @@ const Achievements = () => {
            return(
            <Card color={colour} key={idx}>
              <Card.Content>
-               <Card.Header className="work-title">{achieve.title}</Card.Header>
+               <Card.Header className="work-title proj-title">{achieve.title}</Card.Header>
                <Card.Meta>
-                 <span className='date'>{achieve.date} | {achieve.collaboration}</span>
+                 <span className='date work-subtitle'>{achieve.date} | {achieve.collaboration}</span>
                </Card.Meta>
-               <Card.Description>
+               <Card.Description className="desc">
                  <span dangerouslySetInnerHTML={{ __html: achieve.description}}/>
                </Card.Description>
              </Card.Content>
              <Card.Content extra className="skill-tags-space" >
                  {achieve.skills.map((tag, i)=>{
                    return(
-                       <Label key={i}>
+                       <Label key={i} className="tags">
                             <Icon name="check"/> {tag}
                        </Label> );
                  })}

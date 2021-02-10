@@ -27,18 +27,18 @@ const Projects = () => {
            return(
            <Card color={colour} key={idx}>
              <Card.Content>
-               <Card.Header className="work-title">{proj.title}</Card.Header>
+               <Card.Header className="work-title proj-title">{proj.title}</Card.Header>
                <Card.Meta>
-                 <span className='date'>{proj.date} | {proj.collaboration}</span>
+                 <span className='date work-subtitle'>{proj.date} | {proj.collaboration}</span>
                </Card.Meta>
-               <Card.Description>
+               <Card.Description className="desc">
                  <span dangerouslySetInnerHTML={{ __html: proj.description}}/>
                </Card.Description>
              </Card.Content>
              <Card.Content extra className="skill-tags-space" >
                  {proj.skills.map((tag, i)=>{
                    return(
-                       <Label key={i}>
+                       <Label key={i} className="tags">
                             <Icon name="check"/> {tag}
                        </Label> );
                  })}
