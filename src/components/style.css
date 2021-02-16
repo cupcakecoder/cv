@@ -43,6 +43,10 @@
     margin-left:20%;
   }
 
+  .name {
+    font-size: auto;
+  }
+
 }
 @media (min-width: 768px) {
   .info-box {
@@ -83,6 +87,9 @@
   .locTable{
     width: 90%;
     margin-left:5%;
+  }
+  .name{
+    font-size: 1.5vw;
   }
 }
 
@@ -134,7 +141,6 @@
 .name {
   position: relative;
   font-family: 'Expletus Sans', cursive;
-  font-size: 1.5vw;
   font-weight: bold;
   color :rgb(90,90,90);
   width: 90%;
