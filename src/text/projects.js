@@ -4,14 +4,14 @@ export const projs = {
     { title:"Music Genre Classification - LSTM",
       date:"2021 - Ongoing",
       collaboration:"Hobby Project",
-      description:"Cleaning and making sense of audio signal. <br/>Experimenting with Tensorflow libraries to classify audio data into musical genres.",
-      skills:["Tensorflow","Signal Processing","Neural Networks"],
+      description:"<b>Filtering</b> and <b>extracting features</b> from <b>audio signals</b> with LPC and MFCC. <br/><br/>Experimenting with Tensorflow libraries to classify audio data into musical genres using <b>Long-Short-Term-Memory Neutral Networks</b>.",
+      skills:["Tensorflow","Audio Signal Processing","Neural Networks"],
       type:'DATA'
     },
     { title:"Workforce Discrete-Event Simulation",
       date:"2018-2020",
       collaboration:"BT - Applied Research",
-      description:"<b>Modelled</b> work-schedule <b>stochastically</b> of field workers in telecoms. <br/> Accerating business decisions on workforce planning.",
+      description:"<b>Modelled</b> work-schedule of field workers <b>stochastically</b> in telecoms. <br/> Accelerating business decisions on workforce planning.",
       skills:["Algorithm Design", "Simulation", "Modelling", "Reverse Engineering", "Full-stack Prototyping"],
       type:'DATA'
     },
@@ -39,7 +39,7 @@ export const projs = {
     { title:"UEA Open Day Android Applications",
       date:"2016",
       collaboration:"Team Project at University of East Anglia",
-      description:"Collectively developed three hypothetic <b>Android applications</b> <br/> to aid potential students with their initial visit to the campus. <br/><br/> This project aims to demonstrate our ability in code-reuse and adopting appropriate <b>design-patterns</b> throughout the app collection.",
+      description:"Collectively developed three hypothetical <b>Android applications</b> to aid potential students with their initial visit to the campus. <br/><br/> This project aims to demonstrate our ability in code-reuse and adopting appropriate <b>design-patterns</b> throughout the app collection.",
       skills:["Design-Patterns", "Code Re-use", "Agile Software Development", "Android App Development"],
       type:'SOFTWARE'
     },

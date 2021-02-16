@@ -14,7 +14,6 @@ const Projects = () => {
       itemsPerRow = 2;
     }
 
-  console.log(itemsPerRow);
   let colourMap = new Map();
   colourMap.set('SOFTWARE',{colour:'red'})
   colourMap.set('ART',{colour: 'green'})

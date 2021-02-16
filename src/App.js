@@ -18,8 +18,6 @@ class App extends Component{
     <div className="App">
       <Info/>
       <Content/>
-      <footer className="footer">HAND CRAFTED BY NICOLA WONG 2021
-      </footer>
     </div>
   );}
 }

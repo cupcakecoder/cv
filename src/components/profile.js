@@ -12,27 +12,10 @@ function profile() {
         <p dangerouslySetInnerHTML={{ __html: context.profile1}}/>
         <p dangerouslySetInnerHTML={{ __html: context.profile2}}/>
         <p dangerouslySetInnerHTML={{ __html: context.profile3}}/>
+        <p dangerouslySetInnerHTML={{ __html: context.profile4}}/>
       </div>
       <div className="content">
       <ul>
-
-        <li>
-          <table width="100%">
-              <tbody>
-              <tr>
-                <td width="50px"><IoLanguage className="skill-icon"/></td>
-                <td className="tech-title-column"> LANGUAGES</td>
-              </tr>
-
-              {context.language.map((lang, index)=>(
-                <tr key={index}>
-                  <td width="30%" className="lang-title">{lang.lang}</td>
-                  <td width="70%" className="progressbar"><ProgressBar percentage={lang.percentage} className="progressbar"/></td>
-                </tr>
-              ))}
-              </tbody>
-            </table>
-          </li>
           <li>
             <table width="100%">
                 <tbody>
@@ -49,6 +32,23 @@ function profile() {
                 </tbody>
               </table>
           </li>
+          <li>
+            <table width="100%">
+                <tbody>
+                <tr>
+                  <td width="50px"><IoLanguage className="skill-icon"/></td>
+                  <td className="tech-title-column"> LANGUAGES</td>
+                </tr>
+
+                {context.language.map((lang, index)=>(
+                  <tr key={index}>
+                    <td width="30%" className="lang-title">{lang.lang}</td>
+                    <td width="70%" className="progressbar"><ProgressBar percentage={lang.percentage} className="progressbar"/></td>
+                  </tr>
+                ))}
+                </tbody>
+              </table>
+            </li>
         </ul>
       </div>
     </div>

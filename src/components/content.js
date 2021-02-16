@@ -5,9 +5,12 @@ import Profile from './profile';
 import Education from './education';
 import Projects from './projects';
 import Achievements from './achievements';
+import { context } from '../text/context';
 import { FaGraduationCap, FaMedal} from "react-icons/fa";
 import { IoPersonCircle, IoBriefcase, IoFingerPrint,} from "react-icons/io5";
+import { RiUserSearchFill} from "react-icons/ri";
 import { AiTwotoneExperiment} from "react-icons/ai";
+
 
 function content() {
   return (
@@ -69,16 +72,22 @@ function content() {
           <Education/>
         </div>
 
-        <div className="content-box">
+        <div className="content-box lastbox">
           <table className = "box-header">
               <tbody>
               <tr>
-                <td width="50px"><IoFingerPrint size="30px"/></td>
-                <td>ATTRIBUTE</td>
+                <td width="50px"><RiUserSearchFill size="30px"/></td>
+                <td>REFERENCE</td>
               </tr>
               </tbody>
           </table>
+          <div className="content">
+            <p>{context.reference}</p>
+          </div>
         </div>
+
+        <footer className="footer">HAND CRAFTED BY NICOLA WONG 2021
+        </footer>
       </div>
 
   );
