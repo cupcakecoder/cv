@@ -22,7 +22,7 @@ export const context = {
     profile4:"Willing to <b>relocate internationally</b>. Eligible to work in the United Kingdom / Hong Kong",
     tech:[{tech:"JAVA",percentage:"90%"},{tech:"PYTHON",percentage :"60%"},{tech:"SQL",percentage:"75%"},
     {tech:"SPRINGBOOT",percentage:"80%"},{tech:"REACTJS",percentage:"60%"},{tech:"REST API",percentage:"75%"},
-    {tech:"DOCKER",percentage:"60%"}, {tech:"GIT",percentage:"80%"},{tech:"CI/CD",percentage:"60%"}, {tech:"DATA SCIENCE",percentage:"60%"}],
+    {tech:"DOCKER",percentage:"60%"}, {tech:"GIT",percentage:"80%"},{tech:"CI/CD",percentage:"60%"}, {tech:"Tensorflow",percentage:"40%"}],
     language:[{lang:"English",percentage:"100%"}, {lang:"CANTONESE",percentage:"100%"}, {lang:"MADNARIN",percentage:"80%"}],
 
     /*WORK EXPERIENCE*/
