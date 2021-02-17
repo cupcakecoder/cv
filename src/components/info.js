@@ -2,7 +2,7 @@ import './style.css';
 import React from 'react';
 import { context } from '../text/context';
 import profilepic from '../images/hair_me2020.png';
-import resumepdf from'../images/nicolawong-cv2021.pdf';
+import resumepdf from'../images/nicolawong-CV2021.pdf';
 import { IoLocationSharp} from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn, FaGlobeAmericas } from "react-icons/fa";
