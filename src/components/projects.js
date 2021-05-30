@@ -28,7 +28,7 @@ const Projects = () => {
              <Card.Content>
                <Card.Header className="work-title proj-title">{proj.title}</Card.Header>
                <Card.Meta>
-                 <span className='date work-subtitle'>{proj.date} | {proj.collaboration}</span>
+                 <span className='date work-subtitle'>{proj.date} |</span> <span dangerouslySetInnerHTML={{__html: proj.collaboration}}/>
                </Card.Meta>
                <Card.Description className="desc">
                  <span dangerouslySetInnerHTML={{ __html: proj.description}}/>

@@ -6,7 +6,7 @@ import { IoLocationSharp} from "react-icons/io5";
 
 function workExp() {
   return (
-    <div className="content">
+    <div className="content center-content-div">
       <table className = "work-exp-table">
         <tbody>
           {context.work.map((job,index)=>(

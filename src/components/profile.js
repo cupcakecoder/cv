@@ -7,7 +7,7 @@ import ProgressBar from './progressbar';
 
 function profile() {
   return (
-    <div>
+    <div className="center-content-div">
       <div className="content">
         <p dangerouslySetInnerHTML={{ __html: context.profile1}}/>
         <p dangerouslySetInnerHTML={{ __html: context.profile2}}/>
