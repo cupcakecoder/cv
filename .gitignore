@@ -130,4 +130,13 @@ dist/
 tmp/
 temp/
 
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+.eslintcache/
+
 # End of https://www.toptal.com/developers/gitignore/api/node
