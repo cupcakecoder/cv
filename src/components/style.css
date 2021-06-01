@@ -1,0 +1,444 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/*info box - left*/
+@media (max-width: 768px) {
+  .info-box {
+    width: 100%;
+    height: 90%;
+    position:inline;
+    align-items: center;
+    color :rgb(90,90,90);
+    border-bottom: solid 1.5px rgb(164, 167, 171);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .info-spacer {
+    margin-top: 30%;
+    width:100%;
+    margin-bottom:20%;
+  }
+  .icon-table{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+  }
+  .icon-celltable{
+    display: inline-block;
+    vertical-align: middle;
+    width:25%;
+  }
+  .info-text{
+    display : none;
+  }
+  .info-icon{
+    font-size : 30px;
+    margin : 20px;
+  }
+  .locTable{
+    width: 60%;
+    margin-left:20%;
+  }
+
+  .name {
+    font-size: auto;
+  }
+
+}
+@media (min-width: 768px) {
+  .info-box {
+    width: 25%;
+    height: 98%;
+    position:fixed;
+    align-items: center;
+    border-right: solid 1.5px rgb(164, 167, 171);
+    color :rgb(90,90,90);
+  }
+  .icon-celltable{
+    display: inline-block;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    vertical-align: middle;
+    padding-left: 10%;
+    text-align: left;
+  }
+  .icon-cell{
+    justify-content: center;
+  }
+  .info-cell{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
+  .info-spacer {
+    margin-top: 5%;
+    width: 80%;
+    margin-left:10%;
+  }
+  .info-text{
+    font-size: 12px;
+  }
+  .info-icon{
+  }
+  .locTable{
+    width: 90%;
+    margin-left:5%;
+  }
+  .name{
+    font-size: 1.5vw;
+  }
+}
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(200,200,200);
+  }
+
+.image-spacer {
+  margin-top: 20%;
+  margin-left :25%;
+  margin-right :25%;
+  margin-bottom: 5%;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.shadow{
+  height: 101%;
+  width: 101%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color:rgb(164, 167, 171);
+  opacity: 0.5;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.nameTable{
+  width : 100%;
+  vertical-align: middle;
+  text-align :center;
+}
+
+.name {
+  position: relative;
+  font-family: 'Expletus Sans', cursive;
+  font-weight: bold;
+  color :rgb(90,90,90);
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  text-align: center;
+}
+
+
+.title {
+  font-family: 'Expletus Sans', cursive;
+  letter-spacing: 2px;
+  position: relative;
+  color :rgb(90,90,90);
+  font-size: 90%;
+}
+
+.qualification {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  color: grey;
+  font-size: 80%;
+}
+.location {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  color: grey;
+  font-size: 80%
+}
+/*end of info box*/
+
+
+/*content section*/
+
+
+@media (max-width: 768px) {
+  .content-section {
+    font-family: 'Lato', sans-serif;
+    margin-left: 28%;
+    width: 70%;
+    position: relative;
+    display: inline;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .content{
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom :8%;
+    width: 90%;
+    text-align: left;
+    width: fit-content;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .center-content-div{
+    margin-left: 10%
+  }
+  .content-section {
+    font-family: 'Lato', sans-serif;
+    margin-left: 28%;
+    margin-bottom:2%;
+    width: 70%;
+    height: 96vh;
+    position: relative;
+    display: block;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .content{
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom :5%;
+    width: 80%;
+    text-align: left;
+    width: fit-content;
+  }
+
+}
+
+ul{
+  list-style-type : none;
+  padding-inline-start : 0em !important;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+li{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.content-box{
+  text-align: left;
+  margin: 3%;
+  border-bottom: solid 1.5px rgb(164, 167, 171)
+}
+.lastbox{
+  border-bottom:none !important;
+}
+
+.box-header{
+  color :rgb(90,90,90);
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 550;
+  font-size: 20px;
+  vertical-align: middle
+}
+
+/*end of content section*/
+
+/*tech stack & language */
+@media (max-width: 768px) {
+  .skill-table {
+    width:90%;
+    margin-left:5%;
+    margin-bottom:5%;
+  }
+  .tech-title-column{
+    width: 200px;
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 768px) {
+  .skill-table {
+    width: 80%;
+    margin-left:10%;
+    margin-bottom:5%;
+    vertical-align: middle;
+  }
+  .tech-title-column{
+    width: 250px;
+    color :rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+}
+.tech-title{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+.lang-title{
+  font-size: 12px;
+  text-align: right !important;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+.skill-option{
+  vertical-align: top;
+}
+
+.skill-icon{
+  color :rgb(90,90,90);
+  font-size:20px;
+}
+.progressbar{
+  padding-right:10%;
+}
+/*end of tech stack & language */
+
+/* work experience & education*/
+
+.work-exp-table{
+  width:100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.work-row{
+  vertical-align: top;
+}
+.work-date-col{
+  width:25%;
+  text-align: right;
+  font-size: 85%;
+  vertical-align: top;
+}
+.work-dot-col{
+  width:10%;
+  height:100%;
+  text-align: center;
+  vertical-align: top;
+}
+.work-dot{
+  opacity: 0.7;
+  height:10px;
+}
+.vertical-line{
+  margin-left:46%;
+  height: 100%;
+  width: 2px;
+  display: block;
+  position: inherit;
+  overflow: hidden;
+  opacity: 0.7;
+  background-color:rgb(90,90,90);
+}
+.work-deets-col{
+  letter-spacing: 3px;
+  width:75%;
+  text-align: left;
+  height: 100%;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .work-date-col{
+    padding-top: 2%;
+    width:10% !important;
+  }
+  .work-deets-col{
+    width:80% !important;
+  }
+  .work-title{
+    text-transform: uppercase;
+    font-family: 'Expletus Sans', cursive;
+    color :rgb(90,90,90) !important;
+    font-weight: 600;
+    font-size: 85%;
+  }
+  .proj-title{ font-size: 90% !important;}
+  .work-subtitle{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.8px;
+    font-size: 60%;
+    padding-bottom: 5%;
+  }
+  .work-company{
+    font-family: 'Expletus Sans', cursive;
+    letter-spacing: 0.8px;
+    font-weight: 550;
+    font-size: 60%;
+  }
+  .school-grade{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.8px;
+    font-size: 60%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .work-title{
+    text-transform: uppercase;
+    font-family: 'Expletus Sans', cursive;
+    color :rgb(90,90,90) !important;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  .proj-title{
+    font-size: 100% !important;
+  }
+  .work-subtitle{
+    font-family: 'Lato', sans-serif;
+    font-size: 85%;
+    padding-bottom: 5%;
+  }
+  .work-company{
+    font-family: 'Expletus Sans', cursive;
+    font-weight: bold;
+    font-size: 76%;
+  }
+  .school-grade{
+    font-family: 'Lato', sans-serif;
+    font-size: 80%;
+    padding-bottom: 5%;
+  }
+}
+
+/*end of work experience & education*/
+
+/*projects*/
+.skill-tags-space{
+  line-height: 2em;
+}
+.desc{
+  margin-top: 1.5em !important;
+  font-size: 90%;
+}
+.tags{
+  font-size: 75% !important;
+}
